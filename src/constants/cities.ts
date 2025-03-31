@@ -9,5 +9,8 @@ export const INDIAN_CITIES = [
   'Pune',
   'Ahmedabad',
   'Jaipur',
-  'Lucknow'
+  'Lucknow',
+  'Chandigarh',
+  'Dehradun',
+  'Surat'
 ];
