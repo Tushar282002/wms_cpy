@@ -51,7 +51,7 @@ const WeatherDashboard: React.FC = () => {
     fetchCityWeather('Mumbai');
     
     // Fetch weather for other Indian cities
-    INDIAN_CITIES.slice(1, 12).forEach(city => {
+    INDIAN_CITIES.slice(1, 8).forEach(city => {
       fetchWeatherData(city).then(data => {
         setCities(prev => {
           const newCities = prev.filter(c => c.city !== data.weather.city);
@@ -150,12 +150,12 @@ const WeatherDashboard: React.FC = () => {
                 onCitySelect={(city) => fetchCityWeather(city)}
                 isCelsius={isCelsius}
               />
-              {/* <WeatherAlert
+              <WeatherAlert
                 onSubmit={(alert) => {
                   console.log('Alert created:', alert);
                   showToast('Weather alert created successfully!');
                 }}
-              /> */}
+              />
             </div>
           </div>
         </div>
